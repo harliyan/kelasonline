@@ -5,6 +5,7 @@
     <body>
         <h2 style="margin-top:0px">Kelola Jadwal Read</h2>
         <table class="table">
+        <tr><td>Kelas</td><td><?php echo $kelas; ?></td></tr>
 	    <tr><td>Jam Bimbingan</td><td><?php echo $jam_bimbingan; ?></td></tr>
 	    <tr><td>Jumlah Siswa</td><td><?php echo $jumlah_siswa; ?></td></tr>
 	    <tr><td>Hari Bimbingan</td><td><?php echo $hari_bimbingan; ?></td></tr>

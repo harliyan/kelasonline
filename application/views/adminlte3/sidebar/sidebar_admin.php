@@ -11,7 +11,7 @@ $cetak = print_data('get_where', array('users', array('id_user'=>$this->session-
       <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
         <div class="d-table m-auto">
          <!-- <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="<?php print base_url('Shards-Dashboard/'); ?>images/avatars/pekalongan.PNG"> -->
-         <span class="d-none d-md-inline ml-1">KELAS ONLINE</span>
+         <span class="d-none d-md-inline ml-1">AdCourse</span>
        </div>
      </a>
      <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
@@ -48,18 +48,23 @@ $cetak = print_data('get_where', array('users', array('id_user'=>$this->session-
           <span>Kelola Jadwal Kelas</span>
         </a>
       </li>
-       <li class="nav-item">
+      <!--  <li class="nav-item">
         <a class="nav-link" href="tb_info_bimbel">
           <i class="material-icons">view_list</i>
           <span>Informasi Bimbingan Belajar</span>
         </a>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="data">
-          <i class="material-icons">add_a_photo</i>
-          <span>Data</span>
-        </a>
       </li> -->
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="material-icons">note_add</i>
+          <span>Info Bimbingan Belajar</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="materi">Materi</a>
+          <a class="dropdown-item" href="tb_tryout">Nilai Tryout</a>
+         
+        </div>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="tb_siswa">
           <i class="material-icons">add_a_photo</i>

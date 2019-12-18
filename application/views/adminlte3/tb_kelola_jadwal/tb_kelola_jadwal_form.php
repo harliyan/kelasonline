@@ -5,6 +5,10 @@
         <h2 style="margin-top:0px">Kelola Jadwal <?php echo $button ?></h2>
         <form action="<?php echo $action; ?>" method="post">
 	    <div class="form-group">
+            <label for="varchar">Kelas <?php echo form_error('kelas') ?></label>
+            <input type="text" class="form-control" name="kelas" id="kelas" placeholder="Jam Bimbingan" value="<?php echo $kelas; ?>" />
+        </div>
+         <div class="form-group">
             <label for="varchar">Jam Bimbingan <?php echo form_error('jam_bimbingan') ?></label>
             <input type="text" class="form-control" name="jam_bimbingan" id="jam_bimbingan" placeholder="Jam Bimbingan" value="<?php echo $jam_bimbingan; ?>" />
         </div>

@@ -32,6 +32,7 @@
     <table class="table table-bordered" style="margin-bottom: 10px">
         <tr>
             <th>No</th>
+            <th>Kelas</th>
             <th>Jam Bimbingan</th>
             <th>Jumlah Siswa</th>
             <th>Hari Bimbingan</th>
@@ -43,6 +44,7 @@
                 ?>
                 <tr>
                  <td width="80px"><?php echo ++$start ?></td>
+                 <td><?php echo $tb_kelola_jadwal->kelas ?></td>
                  <td><?php echo $tb_kelola_jadwal->jam_bimbingan ?></td>
                  <td><?php echo $tb_kelola_jadwal->jumlah_siswa ?></td>
                  <td><?php echo $tb_kelola_jadwal->hari_bimbingan ?></td>

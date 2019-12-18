@@ -55,6 +55,7 @@ class Tb_kelola_kelas extends CI_Controller
         if ($row) {
             $data = array(
               'id' => $row->id,
+              'kelas' => $row->kelas,
               'kapasitas' => $row->kapasitas,
               'jam_tersedia' => $row->jam_tersedia,
               'active_controller' => 'tb_kelola_kelas',
@@ -74,6 +75,7 @@ class Tb_kelola_kelas extends CI_Controller
             'button' => 'Create',
             'action' => site_url('admin/tb_kelola_kelas/create_action'),
             'id' => set_value('id'),
+            'kelas' => set_value('kelas'),
             'kapasitas' => set_value('kapasitas'),
             'jam_tersedia' => set_value('jam_tersedia'),
             'active_controller' => 'tb_kelola_kelas',
@@ -91,6 +93,7 @@ class Tb_kelola_kelas extends CI_Controller
             $this->create();
         } else {
             $data = array(
+              'kelas' => $this->input->post('kelas',TRUE),
               'kapasitas' => $this->input->post('kapasitas',TRUE),
               'jam_tersedia' => $this->input->post('jam_tersedia',TRUE),
           );
@@ -110,6 +113,7 @@ class Tb_kelola_kelas extends CI_Controller
                 'button' => 'Update',
                 'action' => site_url('admin/tb_kelola_kelas/update_action'),
                 'id' => set_value('id', $row->id),
+                'kelas' => set_value('kelas', $row->kelas),
                 'kapasitas' => set_value('kapasitas', $row->kapasitas),
                 'jam_tersedia' => set_value('jam_tersedia', $row->jam_tersedia),
                 'active_controller' => 'tb_kelola_kelas',
@@ -131,13 +135,14 @@ class Tb_kelola_kelas extends CI_Controller
             $this->update($this->input->post('id', TRUE));
         } else {
             $data = array(
+              'kelas' => $this->input->post('kelas',TRUE),
               'kapasitas' => $this->input->post('kapasitas',TRUE),
               'jam_tersedia' => $this->input->post('jam_tersedia',TRUE),
           );
 
             $this->Tb_kelola_kelas_model->update($this->input->post('id', TRUE), $data);
             $this->session->set_flashdata('message', 'Update Record Success');
-            redirect(site_url('tb_kelola_kelas'));
+            redirect(site_url('admin/tb_kelola_kelas'));
         }
     }
     
@@ -157,6 +162,7 @@ class Tb_kelola_kelas extends CI_Controller
 
     public function _rules() 
     {
+       $this->form_validation->set_rules('kelas', 'kelas', 'trim|required');
        $this->form_validation->set_rules('kapasitas', 'kapasitas', 'trim|required');
        $this->form_validation->set_rules('jam_tersedia', 'jam tersedia', 'trim|required');
 

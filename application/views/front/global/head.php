@@ -7,7 +7,7 @@ $meta_desc = isset($meta_desc) ? $meta_desc : "";
 
 <head>
     <meta charset="utf-8" />
-    <title>KELAS ONLINE</title>
+    <title>AdCourse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />

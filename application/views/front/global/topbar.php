@@ -7,7 +7,7 @@
                     <div class="logo">
                      
                         <a href="home" class="logo">
-                        <h4 class="mt-4" style="color: #c70404">Kelas Online</h4>
+                        <h4 class="mt-4" style="color: #c70404">AdCourse</h4>
                         </a>
 
                     </div>

@@ -32,6 +32,7 @@
         <table class="table table-bordered" style="margin-bottom: 10px">
           <tr>
             <th>No</th>
+            <th>Kelas</th>
             <th>Kapasitas</th>
             <th>Jam Tersedia</th>
             <!--  <th>Action</th> -->
@@ -41,6 +42,7 @@
               ?>
               <tr>
                 <td width="80px"><?php echo ++$start ?></td>
+                <td><?php echo $tb_kelola_kelas->kelas ?></td>
                 <td><?php echo $tb_kelola_kelas->kapasitas ?></td>
                 <td><?php echo $tb_kelola_kelas->jam_tersedia ?></td>
 

@@ -4,7 +4,11 @@
     <br>
     <h2 style="margin-top:0px">Tb_kelola_kelas <?php echo $button ?></h2>
     <form action="<?php echo $action; ?>" method="post">
-       <div class="form-group">
+    <div class="form-group">
+        <label for="varchar">Kelas <?php echo form_error('kelas') ?></label>
+        <input type="text" class="form-control" name="kelas" id="kelas" placeholder="kelas" value="<?php echo $kelas; ?>" />
+    </div>
+     <div class="form-group">
         <label for="varchar">Kapasitas <?php echo form_error('kapasitas') ?></label>
         <input type="text" class="form-control" name="kapasitas" id="kapasitas" placeholder="Kapasitas" value="<?php echo $kapasitas; ?>" />
     </div>
